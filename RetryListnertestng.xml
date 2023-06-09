@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Retry_Suite">
+
+<listeners>
+	<listener class-name="retryListner.R_try_Listener"></listener>
+</listeners>
+
+  <test thread-count="5" name="Retry_Test">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="retryListner.ClassBase"/>
+    </classes>
+  </test> <!-- Retry_Test -->
+</suite> <!-- Retry_Suite -->
